@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>豆瓣电影</title>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://img3.doubanio.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="douban.css" />
+
+  </head>
+  <body>
+
+
+    <!-- 最顶部导航栏 -->
+    <div class="navigation-bar">
+      <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <ul class="nav navbar-nav navbar-top">
+            <li><a href="https://www.douban.com" target="_blank">豆瓣</a></li>
+            <li><a href="https://book.douban.com" target="_blank">读书</a></li>
+            <li><a href="https://movie.douban.com" target="_blank">电影</a></li>
+            <li><a href="https://music.douban.com" target="_blank">音乐</a></li>
+            <li><a href="https://www.douban.com/location" target="_blank">同城</a></li>
+            <li><a href="https://www.douban.com/group" target="_blank">小组</a></li>
+            <li><a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank">阅读</a></li>
+            <li><a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank">FM</a></li>
+            <li><a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank">时间</a></li>
+            <li><a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank">豆品</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  更多
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="min-width:80px" >
+                  <li><a href="https://ypy.douban.com/" target="_blank">豆瓣摄影</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right navbar-top">
+            <li><a id="eeee" href="https://www.douban.com/doubanapp/app?channel=top-nav" target="_blank" >下载豆瓣客户端</a></li>
+            <li><a href="https://www.douban.com/accounts/login?source=movie" target="_blank">登录</a></li>
+            <li><a href="https://accounts.douban.com/register?source=movie" target="_blank">注册</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+<!-- 中部导航栏以及搜索框 -->
+<div class="db-navigation">
+  <div class="db-navigation-first">
+    <div class="nav-log">
+      <a href="https://movie.douban.com/">豆瓣电影</a>
+    </div>
+    <div class="nav-search">
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="    搜索电影、电视剧、综艺、影人">
+
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="db-navigetion-second">
+    <ul class="nav navbar-nav nav22">
+      <li><a href="https://movie.douban.com/cinema/nowplaying/">影讯&购票</a></li>
+      <li><a href="https://movie.douban.com/explore">选电影</a></li>
+      <li><a href="https://movie.douban.com/tv/">电视剧</a></li>
+      <li><a href="https://movie.douban.com/chart">排行榜</a></li>
+      <li><a href="https://movie.douban.com/tag/">分类</a></li>
+      <li><a href="https://movie.douban.com/review/best/">影评</a></li>
+      <li><a href="https://movie.douban.com/annual/2017?source=navigation">2017年度榜单</a></li>
+      <li><a href="https://movie.douban.com/standbyme/2017/share">2017观影报告</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 主体内容 -->
+<div class="main_part">
+
+
+  <div class="container-1">
+
+
+    <div class="container-1-nav1">
+      <h2 class="aside-nav3-h2">正在热映
+        <a class="aside-nav3-text1" href="https://movie.douban.com/cinema/nowplaying/xiamen/">全部正在热映»</a>
+        <a class="aside-nav3-text1" href="https://movie.douban.com/cinema/later/xiamen/">即将上映»</a>
+  
+  
+        <div class="float-button">
+          <a class="left-carousel-control" href="#carousel_1-id" data-slide="prev">
+              <button type="button" class="float-button-hh">
+                  <span class="glyphicon glyphicon-menu-left" aria-hidden="true">
+                  </span></button>
+          </a>
+          
+          <a class="right-carousel-control" href="#carousel_1-id" data-slide="next">
+            <button type="button" class="float-button-hh">
+              <span class="glyphicon glyphicon-menu-right" aria-hidden="true">
+              </span></button>
+          </a>
+        </div>
+      </h2>
+    </div>
+  
+    <!-- 第一个轮播图 -->
+    <div id="carousel_1-id" class="carousel slide" data-ride="carousel">
+  
+      <div class="carousel-inner">
+        <div class="item  active">
+  
+          <div class="carousel_1-1">
+            <div class="carousel-1-movie">
+              <img id="wwww" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537158013.webp">
+              
+              <div class="carousel_1-1-name">
+                <a href="">毒液：致命守...</a><br />
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star eee" aria-hidden="true"></span>
+                    <span style="color:orange">8.0</span>
+                  </button>
+  
+              <button type="button" class="carousel-1-movie-button" >选座购票</button>
+              </div>
+              
+  
+            </div>
+  
+            <div class="carousel-1-movie">
+              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539424621.webp">
+              <a class="" href="">神奇动物：格...</a><br />
+              <span class="">暂无评分</span><br />
+  
+              <button type="button" class="carousel-1-movie-button">选座购票</button>
+  
+            </div>
+            <div class="carousel-1-movie">
+              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539661066.webp">
+              <a class="" href="">无名之辈</a><br />
+              <span class="">暂无评分</span><br />
+  
+              <button type="button" class="carousel-1-movie-button">选座购票</button>
+  
+            </div>
+            <div class="carousel-1-movie">
+              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2537694239.webp">
+              <a class="" href="">名侦探柯南：...</a><br />
+              <span class="">暂无评分</span><br />
+  
+              <button type="button" class="carousel-1-movie-button">选座购票</button>
+  
+            </div>
+            <div class="carousel-1-movie">
+              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2538345957.webp">
+              <a class="" href="">你好，之华</a><br />
+              <span class="">暂无评分</span><br />
+  
+              <button type="button" class="carousel-1-movie-button">选座购票</button>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="item">
+          <div class="carousel_1-2">
+              <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539170936.webp">
+                  <a class="" href="">恐龙王</a><br />
+                  <span class="">暂无评分</span><br />
+      
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+      
+                </div>
+      
+                <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2535524955.webp">
+                  <a class="" href="">流浪猫鲍勃</a><br />
+                  <span class="">暂无评分</span><br />
+      
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+      
+                </div>
+                <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537693782.webp">
+                  <a class="" href="">飓风奇劫</a><br />
+                  <span class="">暂无评分</span><br />
+      
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+      
+                </div>
+                <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539446794.webp">
+                  <a class="" href="">那些名字那些...</a><br />
+                  <span class="">暂无评分</span><br />
+      
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+      
+                </div>
+                <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2535365481.webp">
+                  <a class="" href="">嗝嗝老师</a><br />
+                  <span class="">暂无评分</span><br />
+      
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+      
+                </div>
+  
+          </div>
+        </div>
+
+        
+
+        <div class="item">
+          
+            <div class="carousel_1-3">
+                <div class="carousel-1-movie">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539069876.webp">
+                    <a class="" href="">开学悸</a><br />
+                    <span class="">暂无评分</span><br />
+        
+                    <button type="button" class="carousel-1-movie-button">选座购票</button>
+        
+                  </div>
+        
+                  <div class="carousel-1-movie">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539255334.webp">
+                    <a class="" href="">梦境之源</a><br />
+                    <span class="">暂无评分</span><br />
+        
+                    <button type="button" class="carousel-1-movie-button">选座购票</button>
+        
+                  </div>
+                  <div class="carousel-1-movie">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537133715.webp">
+                    <a class="" href="">冰封侠：时空...</a><br />
+                    <span class="">暂无评分</span><br />
+        
+                    <button type="button" class="carousel-1-movie-button">选座购票</button>
+        
+                  </div>
+                  <div class="carousel-1-movie">
+                    <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2539777749.webp">
+                    <a class="" href="">有5个姐姐的...</a><br />
+                    <span class="">暂无评分</span><br />
+        
+                    <button type="button" class="carousel-1-movie-button">选座购票</button>
+        
+                  </div>
+                  <div class="carousel-1-movie">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537214991.webp">
+                    <a class="" href="">胡桃夹子和四...</a><br />
+                    <span class="">暂无评分</span><br />
+                    <button type="button" class="carousel-1-movie-button">选座购票</button>
+                  </div>
+            </div>
+          </div>
+          <div class="item">
+              <div class="carousel_1-4">
+                <div class="carousel-1-movie">
+                  <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2535096871.webp">
+                  <a class="" href="">无双</a><br />
+                  <span class="">暂无评分</span><br />
+                  <button type="button" class="carousel-1-movie-button">选座购票</button>
+                </div>  
+              </div>
+            </div>
+      </div>
+  
+    </div>
+
+
+    <div class="container-1-img">
+      <a href="https://www.douban.com/note/696929463/" target="_blank"><img class="container-1-img1" src="https://img3.doubanio.com/view/dale-online/dale_ad/public/76d24b8f2fe59ec.jpg"></a>
+    </div>
+  
+
+    <!-- 第二个轮播图 -->
+    
+    <div class="container-2">
+    
+    
+    
+    
+      <div class="container-1-nav1"> 
+        <h2 class="aside-nav3-h2">最近热门电影   
+            <ul class="container-2-h2-nav">
+                <li class="container-2-h2-nav1 selected"><input type="button" class="slide-one" value="热门" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-two" value="最新" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-thr" value="豆瓣高分" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-fou" value="冷门佳片" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-fiv" value="华语" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-six" value="欧美" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-sev" value="韩国" style="border:none; background: none;font-size: 14px;"></li>
+                <li class="container-2-h2-nav1"><input type="button" class="slide-eig" value="日本" style="border:none; background: none;font-size: 14px;"></li>
+            </ul>
+            <span style="float: right;font-size: 14px;"><a href="https://movie.douban.com/explore/">更多»</a></span>
+          </h2>  
+      </div>
+    
+
+      
+      <div class="container-2-carousel-1">
+
+
+          <div id="carousel_2-id" class="carousel slide tttt" data-ride="carousel">
+          
+          
+          
+              <div class="carousel-inner">
+                <div class="item  active">
+          
+                  <div class="carousel_2-1">
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                    </div>
+          
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                      <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                      <span class="carousel_2-1-newicons">
+                        <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                          width="16px" height="16px">
+                      </span>
+                      <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                      <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                      <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                      <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2540492659.jpg">
+                      <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg">
+                      <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540295055.jpg">
+                      <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531887203.jpg">
+                      <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                    </div>
+                  </div>
+                </div>
+          
+          
+                <div class="item">
+                  <div class="carousel_2-2">
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                    </div>
+          
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                      <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                      <span class="carousel_2-1-newicons">
+                        <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                          width="16px" height="16px">
+                      </span>
+                      <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                      <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                      <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                      <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                    </div>
+          
+                  </div>
+                </div>
+          
+          
+          
+                <div class="item">
+          
+                  <div class="carousel_2-3">
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                    </div>
+          
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                      <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                      <span class="carousel_2-1-newicons">
+                        <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                          width="16px" height="16px">
+                      </span>
+                      <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                      <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                      <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                      <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel_2-4">
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                    </div>
+          
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                      <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                      <span class="carousel_2-1-newicons">
+                        <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                          width="16px" height="16px">
+                      </span>
+                      <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                      <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                      <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                      <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                    </div>
+                    <div class="carousel-1-movie">
+                      <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                      <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="item">
+                    <div class="carousel_2-5">
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                      </div>
+            
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                        <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                        <span class="carousel_2-1-newicons">
+                          <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                            width="16px" height="16px">
+                        </span>
+                        <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                        <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                        <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                        <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <ol class="carousel-indicators iconshh">
+                        <li data-target="#carousel_2-id" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel_2-id" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel_2-id" data-slide-to="2" class=""></li>
+                        <li data-target="#carousel_2-id" data-slide-to="3" class=""></li>
+                        <li data-target="#carousel_2-id" data-slide-to="4" class=""></li>
+                    </ol>
+              <div class="float-button-2">
+                      
+                  <div class="float-button-2-1">
+                    <a class="left-carousel-control" href="#carousel_2-id" data-slide="prev">
+                    <button type="button" class="float-button-hh">
+                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true">
+                      </span></button>
+                  </a>
+                  <a class="right-carousel-control float-button-2-2 " href="#carousel_2-id" data-slide="next">
+                      <button type="button" class="float-button-hh">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true">
+                        </span></button>
+                    </a>
+                  
+                  
+                  </div>
+                    
+                    
+                
+                </div>
+          
+             
+      
+            </div>
+                  
+                
+                    
+                <div id="carousel_3-id" class="carousel slide tttt" data-ride="carousel" style="display: none;">
+          
+          
+          
+                    <div class="carousel-inner">
+                      <div class="item  active">
+                
+                        <div class="carousel_3-1">
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                          </div>
+                
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                            <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                            <span class="carousel_2-1-newicons">
+                              <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                                width="16px" height="16px">
+                            </span>
+                            <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                            <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                            <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                            <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2540492659.jpg">
+                            <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg">
+                            <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540295055.jpg">
+                            <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531887203.jpg">
+                            <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                          </div>
+                        </div>
+                      </div>
+                
+                
+                      <div class="item">
+                        <div class="carousel_3-2">
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                          </div>
+                
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                            <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                            <span class="carousel_2-1-newicons">
+                              <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                                width="16px" height="16px">
+                            </span>
+                            <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                            <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                            <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                            <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                          </div>
+                
+                        </div>
+                      </div>
+                
+                
+                
+                      <div class="item">
+                
+                        <div class="carousel_3-3">
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                          </div>
+                
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                            <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                            <span class="carousel_2-1-newicons">
+                              <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                                width="16px" height="16px">
+                            </span>
+                            <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                            <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                            <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                            <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="carousel_3-4">
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                          </div>
+                
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                            <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                            <span class="carousel_2-1-newicons">
+                              <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                                width="16px" height="16px">
+                            </span>
+                            <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                            <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                            <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                            <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                          </div>
+                          <div class="carousel-1-movie">
+                            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                            <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                          <div class="carousel_3-5">
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                              <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                            </div>
+                  
+                            <div class="carousel-1-movie">
+                              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                              <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                              <span class="carousel_2-1-newicons">
+                                <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                                  width="16px" height="16px">
+                              </span>
+                              <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                              <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                              <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                              <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                              <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                              <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                              <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                            </div>
+                            <div class="carousel-1-movie">
+                              <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                              <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                
+                  
+                      <ol class="carousel-indicators iconshh">
+                          <li data-target="#carousel_3-id" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel_3-id" data-slide-to="1" class=""></li>
+                          <li data-target="#carousel_3-id" data-slide-to="2" class=""></li>
+                          <li data-target="#carousel_3-id" data-slide-to="3" class=""></li>
+                          <li data-target="#carousel_3-id" data-slide-to="4" class=""></li>
+                      </ol>
+                <div class="float-button-2">
+                        
+                    <div class="float-button-2-1">
+                      <a class="left-carousel-control" href="#carousel_3-id" data-slide="prev">
+                      <button type="button" class="float-button-hh">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true">
+                        </span></button>
+                    </a>
+                    <a class="right-carousel-control float-button-2-2 " href="#carousel_3-id" data-slide="next">
+                        <button type="button" class="float-button-hh">
+                          <span class="glyphicon glyphicon-menu-right" aria-hidden="true">
+                          </span></button>
+                      </a>
+                    
+                    
+                    </div>
+                      
+                      
+                  
+                  </div>
+                        
+                      
+                          
+                        
+                          
+                        
+                          
+                      
+                        
+                      
+                  </div>   
+                    
+                  
+                    
+                
+                  
+                
+            
+
+
+      </div>
+
+      
+    
+      
+    
+    
+    
+    </div>
+    
+
+
+
+
+    <div class="container-3">
+    
+    
+    
+    
+        <div class="container-1-nav1"> 
+          <h2 class="aside-nav3-h2">最近热门电视剧 
+              <ul class="container-2-h2-nav">
+                  <li class="container-2-h2-nav1 selected"><input type="button" class="slide-one" value="热门" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-two" value="国产剧" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-thr" value="综艺" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-fou" value="美剧" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-fiv" value="日剧" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-six" value="韩剧" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-sev" value="日本动画" style="border:none; background: none;font-size: 14px;"></li>
+                  <li class="container-2-h2-nav1"><input type="button" class="slide-eig" value="日本" style="border:none; background: none;font-size: 14px;"></li>
+              </ul>
+              <span style="float: right;font-size: 14px;"><a href="https://movie.douban.com/explore/">更多»</a></span>
+            </h2>  
+        </div>
+      
+  
+        
+        <div class="container-2-carousel-1">
+  
+  
+            <div id="carousel_a1-id" class="carousel slide tttt" data-ride="carousel">
+            
+            
+            
+                <div class="carousel-inner">
+                  <div class="item  active">
+            
+                    <div class="carousel_a1-1">
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                      </div>
+            
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                        <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                        <span class="carousel_2-1-newicons">
+                          <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                            width="16px" height="16px">
+                        </span>
+                        <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                        <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                        <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                        <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2540492659.jpg">
+                        <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg">
+                        <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540295055.jpg">
+                        <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531887203.jpg">
+                        <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                      </div>
+                    </div>
+                  </div>
+            
+            
+                  <div class="item">
+                    <div class="carousel_a1-2">
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                      </div>
+            
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                        <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                        <span class="carousel_2-1-newicons">
+                          <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                            width="16px" height="16px">
+                        </span>
+                        <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                        <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                        <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                        <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                      </div>
+            
+                    </div>
+                  </div>
+            
+            
+            
+                  <div class="item">
+            
+                    <div class="carousel_a1-3">
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                      </div>
+            
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                        <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                        <span class="carousel_2-1-newicons">
+                          <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                            width="16px" height="16px">
+                        </span>
+                        <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                        <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                        <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                        <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="carousel_a1-4">
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                      </div>
+            
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                        <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                        <span class="carousel_2-1-newicons">
+                          <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                            width="16px" height="16px">
+                        </span>
+                        <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                        <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                        <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                        <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                      </div>
+                      <div class="carousel-1-movie">
+                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                        <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="item">
+                      <div class="carousel_a1-5">
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                          <a class="" href="">我不是药神 <strong style="color:gold">9.0</strong></a><br />
+                        </div>
+              
+                        <div class="carousel-1-movie">
+                          <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg">
+                          <a class="" href="">西虹市首富<strong style="color:gold">6.6</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534473847.jpg">
+                          <span class="carousel_2-1-newicons">
+                            <img src="https://img3.doubanio.com/f/movie/caa8f80abecee1fc6f9d31924cef8dd9a24c7227/pics/movie/ic_new.png"
+                              width="16px" height="16px">
+                          </span>
+                          <a class="" href="">狼屋 <strong style="color:gold">8.3</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529701498.jpg">
+                          <a class="" href="">悲伤逆流成河 <strong style="color:gold">5.8</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.jpg">
+                          <a class="" href="">一处好戏 <strong style="color:gold">7.2</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg">
+                          <a class="" href="">蚁人2:黄蜂女现身 <strong style="color:gold">7.4</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                          <a class="" href="">网络迷踪 <strong style="color:gold">8.7</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                          <a class="" href="">碟中谍6:全面瓦解 <strong style="color:gold">8.2</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                          <a class="" href="">摘星奇缘 <strong style="color:gold">6.3</strong></a><br />
+                        </div>
+                        <div class="carousel-1-movie">
+                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg">
+                          <a class="" href="">反贪风暴 <strong style="color:gold">5.6</strong></a><br />
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators iconshh">
+                          <li data-target="#carousel_a1-id" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel_a1-id" data-slide-to="1" class=""></li>
+                          <li data-target="#carousel_a1-id" data-slide-to="2" class=""></li>
+                          <li data-target="#carousel_a1-id" data-slide-to="3" class=""></li>
+                          <li data-target="#carousel_a1-id" data-slide-to="4" class=""></li>
+                      </ol>
+                <div class="float-button-2">
+                        
+                    <div class="float-button-2-1">
+                      <a class="left-carousel-control" href="#carousel_a1-id" data-slide="prev">
+                      <button type="button" class="float-button-hh">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true">
+                        </span></button>
+                    </a>
+                    <a class="right-carousel-control float-button-2-2 " href="#carousel_a1-id" data-slide="next">
+                        <button type="button" class="float-button-hh">
+                          <span class="glyphicon glyphicon-menu-right" aria-hidden="true">
+                          </span></button>
+                      </a>
+            
+                    </div>
+          
+                  </div>
+    
+              </div>
+                  
+        </div>
+    
+      </div>
+
+    <!-- 中间块   热门推荐部分-->
+
+    <div class="container_hot_Rec">
+    <div class="container-1-nav1">
+      <h2 class="aside-nav3-h2">热门推荐
+        
+  
+        <div class="float-button">
+          <a class="left-carousel-control" href="#carousel_hot_Rec-id" data-slide="prev">
+              <button type="button" class="float-button-hh">
+                  <span class="glyphicon glyphicon-menu-left" aria-hidden="true">
+                  </span></button>
+          </a>
+          
+          <a class="right-carousel-control" href="#carousel_hot_Rec-id" data-slide="next">
+            <button type="button" class="float-button-hh">
+              <span class="glyphicon glyphicon-menu-right" aria-hidden="true">
+              </span></button>
+          </a>
+        </div>
+      </h2>
+    </div>
+    
+
+
+    <div id="carousel_hot_Rec-id" class="carousel slide" data-ride="carousel">
+  
+      <div class="carousel-inner">
+        <div class="item  active">
+  
+          <div class="carousel_hot_Rec-1">
+            <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/d6db0ccdbc8a716.jpg">
+            <div class="carousel_hot_Rec-1-hh">
+            <h4>颜值演技！《神奇动物2》男模天团佳作盘点</h4>
+            <h5>霍格沃茨男模天团了解一下</h5>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="carousel_hot_Rec-2">
+            <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/e7d8d2393d315d2.jpg">
+            <div class="carousel_hot_Rec-1-hh">
+            <h4>未来几年，你将看到这些被翻拍的童年经典！</h4>
+            <h5>期待又担心~</h5>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="item">
+          
+            <div class="carousel_hot_Rec-3">
+              <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/d21ce0cf1d0642e.jpg">
+              <div class="carousel_hot_Rec-1-hh">
+              <h4>第55届金马国际影展：让“新”浪潮来袭</h4>
+              <h5>所谓的“尊重”，也包括不因某些奖项的偏颇而否定整个金马影展对华语电影的贡献，
+                不因某个意外的因素而遮蔽这个机制对电影后辈的扶植。</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+              <div class="carousel_hot_Rec-4">
+                  <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/b7f39adccd28685.jpg">
+                  <div class="carousel_hot_Rec-1-hh">
+                  <h4>宝藏阿姨J·K·罗琳打下的江山</h4>
+                  <h5>“哈利·波特”从畅销书变成了横跨电影、舞台剧、电子游戏、玩具、主题公园等多个领域的产业。
+                    如果这是一场魔法秀，不能缺席的是施魔法的那个人。</h5>
+                  </div>
+              </div>
+            </div>
+      </div>
+  
+    </div>
+
+
+  </div>
+
+  <!-- 中间块   最受欢迎影评部分 -->
+<div class="container_hot_Wel">
+    <div class="container-1-nav1">
+        <h2 class="aside-nav3-h2">最受欢迎的影评
+          <a class="aside-nav3-text1" href="https://movie.douban.com/cinema/nowplaying/xiamen/">更多热门影评»</a>
+          <a class="aside-nav3-text1" href="https://movie.douban.com/cinema/later/xiamen/">新片影评»</a> 
+        </h2>
+      </div>
+
+      <div class="container_hot_Wel-part">
+        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1505312273.webp">
+        <div class="container_hot_Wel-part-hh">
+            <span class="container_hot_Wel-part-span1">
+              <a href="">深藏于心的那份青涩</a>
+            </span>
+            <div class="container_hot_Wel-part-hh2">
+                <span class="container_hot_Wel-part-span2">
+                    <a style="display: inline;" href="">男神的炎迪迪</a>
+                    <h6 style="display: inline;">评论</h6>
+                    <a style="display: inline;" href="">《初恋这件小事》</a>
+                  </span><br/>
+                  <span class="container_hot_Wel-part-span2">
+                      学长他就像我生命中的灵感，他让我了解爱的积极意义，他就像是让我一直前进的动力， 
+                      其实这部在内地12年上映的泰国校园爱情小清新电影，每次想到学生时期的那份纯纯爱恋，
+                      总是会把它再刷一遍，遍遍的感触都不同，...<a>(全文)</a>
+                  </span>
+            </div>
+           
+           
+        </div>
+ 
+      </div>
+      <div class="container_hot_Wel-part2">
+          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p982896012.webp">
+          <div class="container_hot_Wel-part-hh">
+              <span class="container_hot_Wel-part-span1">
+                <a href="">秒速五厘米，灵魂飘落的速度</a>
+              </span>
+              <div class="container_hot_Wel-part-hh2">
+                  <span class="container_hot_Wel-part-span2">
+                      <a style="display: inline;" href="">男神的炎迪迪</a>
+                      <h6 style="display: inline;">评论</h6>
+                      <a style="display: inline;" href="">《秒速5厘米》</a>
+                    </span><br/>
+                    <span class="container_hot_Wel-part-span2">
+                        当你走在熙熙攘攘的街头，忽然，一张似曾相识的脸出现在眼帘之中。未及细看，那身影已翩然
+                        而过。当你回头，茫茫人海里已无处寻觅，而刚才的邂逅，竟不知是真实存在，还是脑海中的虚幻。
+                        猛然间，那个曾经才下眉头...<a>(全文)</a>
+                    </span>
+              </div>
+             
+             
+          </div>
+   
+        </div>
+        <div class="container_hot_Wel-part2">
+            <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2528959166.webp">
+            <div class="container_hot_Wel-part-hh">
+                <span class="container_hot_Wel-part-span1">
+                  <a href="">豆瓣9.7，这部去年爆红一时的纪录片，今年有必要接着吹</a>
+                </span>
+                <div class="container_hot_Wel-part-hh2">
+                    <span class="container_hot_Wel-part-span2">
+                        <a style="display: inline;" href="">大象点映</a>
+                        <h6 style="display: inline;">评论</h6>
+                        <a style="display: inline;" href="">《最后的棒棒》</a>
+                      </span><br/>
+                      <span class="container_hot_Wel-part-span2">
+                          作者：林春宵 2015年，一部极其朴实、诚恳的纪录片悄无声息地出现，当时没能激起什么水花，
+                          没背景没资本没观众没口碑，整整13集，近400分钟，以2.6万的低价卖给了爱奇艺。 去年，
+                          这部纪录片剧集，以遗珠之态被众...<a>(全文)</a>
+                      </span>
+                </div>
+               
+               
+            </div>
+     
+          </div>
+          <div class="container_hot_Wel-part2">
+              <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p858079649.webp">
+              <div class="container_hot_Wel-part-hh">
+                  <span class="container_hot_Wel-part-span1">
+                    <a href="">童话永远只在故事中</a>
+                  </span>
+                  <div class="container_hot_Wel-part-hh2">
+                      <span class="container_hot_Wel-part-span2">
+                          <a style="display: inline;" href="">还不下班</a>
+                          <h6 style="display: inline;">评论</h6>
+                          <a style="display: inline;" href="">《金刚》</a>
+                        </span><br/>
+                        <span class="container_hot_Wel-part-span2">
+                            金刚和安，野兽与美女，角色相似，情节相仿，但是金刚没有野兽幸运，野兽是王子，野兽有爱情，
+                            金刚只是金刚，一只被飞机打死的猩猩，得不到安，也失去生的机会。美女与野兽是童话故事，
+                            金刚与安是现实。 影片中，...<a>(全文)</a>
+                        </span>
+                  </div>
+                 
+                 
+              </div>
+       
+            </div>
+
+
+</div>
+  
+  
+
+    
+
+ 
+
+    
+   
+
+
+    
+    </div>
+
+<!-- 中间块的右边 -->
+  <div class="aside">
+    <div class="aside-nav1">
+      <ul>
+        <li class="aside-nav1-li">
+          <a href="https://blog.douban.com/douban/2015/12/18/3060/">豆瓣电影评分八问</a>
+        </li>
+      </ul>
+    </div>
+    <div class="aside-nav-img1">
+      <img src="https://oimagec6.ydstatic.com/image?id=6630231180672347345&product=adpublish&w=300&h=250&sc=0&rm=0">
+    </div>
+    <div class="aside-nav2">
+      <ul>
+        <li class="aside-nav2-li">
+          <a id="aside-nav2-text1"> 电影活动 · · · · · · </a><br />
+          <a class="aside-nav2-text2" href="https://www.douban.com/note/697044041/" target="_blank">第55届金马奖完整获奖名单</a><br />
+          <a class="aside-nav2-text2" href="https://www.douban.com/note/696929463/" target="_blank">金马创投会：给年轻“李安们”拍电影的机会</a>
+        </li>
+      </ul>
+    </div>
+    <div class="aside-nav3">
+      <h2 class="aside-nav3-h2">一周口碑榜<a class="aside-nav3-text1" href="https://movie.douban.com/chart">更多榜单»</a></h2>
+      <table class="aside-nav3-table">
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">1</td>
+            <td class="aside-nav3-table-title" ><a href="https://movie.douban.com/subject/26147417/">神奇动物：格林德沃之罪</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">2</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/27596249/">重金属囧途</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">3</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/26992114/">孤狼之血</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">4</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/4058933/">一个明星的诞生</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">5</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/27029495/">法外之王</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">6</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/27611421/">滑板少年</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">7</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/2068290/">风的另一边</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">8</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/26754734/">狼屋</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">9</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/27066187/">麦昆</a></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav3-table-order">10</td>
+            <td class="aside-nav3-table-title"><a href="https://movie.douban.com/subject/30143861/">我的冤家是条狗</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="aside-nav-img2">
+      <img src="https://img3.doubanio.com/view/dale-online/dale_ad/public/b7bb082f1716f10.jpg">
+    </div>
+
+    <div class="aside-nav4">
+      <h2 class="aside-nav3-h2">热门豆列</h2>
+      <table class="aside-nav3-table">
+        <tbody>
+          <tr>
+            <td class="aside-nav4-table-title">国立清华大学郑运鸿老师《科幻概论》推荐</td>
+            <td class="aside-nav4-table-recommend">36推荐</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="aside-nav4-table-title">豆瓣评分8.0以上的韩剧（评价人数≥1000）</td>
+            <td class="aside-nav4-table-recommend">591推荐</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="aside-nav5">
+      <h2 class="aside-nav3-h2">合作联系</h2>
+      <div class="aside-nav5-infor">
+        <ul>
+          <li class="aside-nav5-infor-li">电影合作邮箱：<span class="aside-nav5-infor-span">movie@douban.com</span></li>
+          <li class="aside-nav5-infor-li">电视剧合作对象：
+            <span class="aside-nav5-infor-span">tv@douban.com</span>
+            <img src="https://img3.doubanio.com/f/shire/486503da8c82ffdbecec41c065927f96cbf02e4f/pics/icon/ic_new.png">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aside-nav6">
+      <h3 class="aside-nav6-h3">关于我们</h3>
+      <table class="aside-nav6-table">
+        <tbody>
+          <tr>
+            <td class="aside-nav6-table-td">
+              <th></th>
+              <th class="aside-nav6-table-th">微博</th>
+            </td>
+            <td class="aside-nav6-table-td">
+              <th></th>
+              <th class="aside-nav6-table-th">微信</th>
+            </td>
+            <td class="aside-nav6-table-td">
+              <th></th>
+              <th class="aside-nav6-table-th">瓣嘴</th>
+            </td>
+            <td class="aside-nav6-table-td">
+              <th></th>
+              <th class="aside-nav6-table-th">鑫像奖小站</th>
+            </td>
+            <td class="aside-nav6-table-td">
+              <th></th>
+              <th class="aside-nav6-table-th">观影club</th>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aside-nav7">
+      <div>
+        <img class="aside-nav7-img" src="https://img3.doubanio.com/view/dale-online/dale_ad/public/8fc38100761121a.jpg">
+      </div>
+      <div>
+          <p class="aside-nav7-p">豆瓣日历 | 精选365部高分电影</p>
+          <p class="aside-nav7-p">豆瓣豆品</p>
+      </div>
+      
+    </div>
+
+
+  <!-- 最底部 -->
+
+    
+
+  </div>
+
+
+
+</div>
+
+
+<div class="footer">
+    <span>© 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司</span>
+    <ul class="footer-nav">
+        <li class="container-2-h2-nav1"><a href="">关于豆瓣&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">在豆瓣工作&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">联系我们&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">免责声明&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">帮助中心&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">移动应用&nbsp;&nbsp;-&nbsp;&nbsp;</a></li>
+        <li class="container-2-h2-nav1"><a href="">豆瓣广告</a></li>
+    </ul>
+    
+    </div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/try/bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+    <script src="/try/bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+    <script src="douban.js"></script>
+  </body>
+</html>
